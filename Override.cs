@@ -44,7 +44,7 @@ public class Guerreiro: Personagem {
 public class Mago: Personagem {
     private string cajado;
 
-    public Guerreiro(string nome; string raca; int lv; string cajado;) : base(nome, raca, lv){
+    public Mago(string nome; string raca; int lv; string cajado;) : base(nome, raca, lv){
         Cajado = cajado;
     }
 
@@ -76,12 +76,12 @@ public class Arqueiro: Personagem {
 pubic class Program {
     public static void main (string[] args) {
         Guerreiro guerreiro = new Guerreiro("Sion", "Morto-Vivo", 50, "Machado de duas mãos");
-        Guerreiro.Atacar();
+        guerreiro.Atacar();
 
         Mago mago = new Mago("Dante", "Escolhido por Deus", 23, "Grimório da Morte");
-        Mago.Atacar();
+        mago.Atacar();
 
         Arqueiro arqueiro = new Arqueiro("Joui", "Humano", 19, "Arco tocado pelo Sangue");
-        Arqueiro.Atacar();
+        arqueiro.Atacar();
     }
 }
